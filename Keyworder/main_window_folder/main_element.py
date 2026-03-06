@@ -275,8 +275,8 @@ class Main_element:
 
                 for key, val in self.keyword_and_sentence.items():
                         if self.search_input in key or self.search_input in val:
-                                self.output_box1.write_output(f'\nkeyword = {key}\n')
-                                self.output_box1.write_output(f'sentence = {val}\n')
+                                self.output_box1.write_output(f'\n# KEYWORD  :\n{key}\n')
+                                self.output_box1.write_output(f'# SENTENCE :\n{val}\n')
                                 self.found = True
 
                 if not self.found:
@@ -337,8 +337,8 @@ class Main_element:
                 else:
                         self.output_box1.write_output(f'\n\n{self.aset.equal_sign*14}[ KEYWORD & SENTENCE ]{self.aset.equal_sign*14}')
                         for keyword, sentence in self.keyword_and_sentence.items():
-                                self.output_box1.write_output(f'\nkeyword = {keyword}\n')
-                                self.output_box1.write_output(f'sentence = {sentence}\n')
+                                self.output_box1.write_output(f'\n# KEYWORD  :\n{keyword}\n')
+                                self.output_box1.write_output(f'# SENTENCE :\n{sentence}\n')
 
 #clear button
         def clear_output_box_button(self):
